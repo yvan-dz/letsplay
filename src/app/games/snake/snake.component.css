@@ -1,0 +1,35 @@
+.snake-board {
+    display: grid;
+    grid-template-columns: repeat(20, 20px); /* 20x20 Raster */
+    gap: 1px;
+    justify-content: center;
+    margin: 20px auto;
+    width: 420px;
+    height: 420px;
+    background-color: #ddd;
+  }
+  
+  .snake-board div {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+  }
+  
+  .snake {
+    background-color: green; /* Farbe der Schlange */
+  }
+  
+  .food {
+    background-color: red; /* Farbe des Essens */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  

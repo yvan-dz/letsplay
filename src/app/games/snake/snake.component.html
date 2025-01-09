@@ -1,0 +1,10 @@
+<h2>Snake Spiel</h2>
+<div class="snake-board">
+  <div
+    *ngFor="let cell of board; let i = index"
+    [class.snake]="snake.includes(i)"
+    [class.food]="food === i"
+  ></div>
+</div>
+<p *ngIf="gameOver">💀 Spiel vorbei! Punkte: {{ score }} 💀</p>
+<p *ngIf="!gameOver">Punkte: {{ score }}</p>
