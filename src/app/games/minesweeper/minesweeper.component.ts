@@ -7,6 +7,18 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <h2>Minesweeper</h2>
+
+    <section class="rules">
+  <h3>Spielregeln</h3>
+  <ul>
+    <li>Das Spielfeld enthält versteckte Bomben.</li>
+    <li>Klicke auf ein Feld, um es aufzudecken.</li>
+    <li>Zahlen zeigen an, wie viele Bomben sich in den angrenzenden Feldern befinden.</li>
+    <li>Vermeide die Bomben, um das Spiel zu gewinnen.</li>
+    <li>Das Spiel endet, wenn du eine Bombe triffst.</li>
+  </ul>
+</section>
+
     <div class="board">
       <div
         class="cell"
@@ -30,6 +42,34 @@ import { CommonModule } from '@angular/common';
       margin: 20px auto;
       width: 420px;
     }
+    .rules {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rules h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.rules ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.rules ul li {
+  margin-bottom: 8px;
+}
 
     .cell {
       width: 40px;

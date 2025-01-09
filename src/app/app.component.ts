@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterModule], // RouterModule für die Navigation
+  imports: [CommonModule, RouterModule], // RouterModule für Navigation
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })

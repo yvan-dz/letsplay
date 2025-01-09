@@ -1,1 +1,169 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    background: radial-gradient(circle, #1b1b1b, #000);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, p {
+    margin: 0;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to bottom, #ff5722, #e64a19);
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px #000;
+    
+    
+  }
+  
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffd54f;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #000, #222);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #ff5722;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Game List */
+  .game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .game-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(to bottom, #ff9800, #ff5722);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .game-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 2px solid #444;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Mobile Message */
+  .mobile-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    padding: 50px 20px;
+  }
+  
+  .mobile-message p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .mobile-message img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .game-list,
+    .hero {
+      display: none;
+    }
+  
+    .mobile-message {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-message {
+      display: none;
+    }
+  }
+  

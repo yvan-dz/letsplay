@@ -1,16 +1,49 @@
-<h1>Willkommen bei LetsPlay!</h1>
-<p>Wähle ein Spiel aus:</p>
-<ul>
- 
-  <li><a routerLink="/tictactoe">Tic Tac Toe</a></li>
-  <li><a routerLink="/memory">Memory</a></li>
-  <li><a routerLink="/doodlejump">Doodle Jump</a></li>
-  <li><a routerLink="/rockpaperscissors">Rock-Paper-Scissors</a></li>
-  <li><a routerLink="/minesweeper">Minesweeper</a></li>
-  <li><a routerLink="/checkers">Checkers Game</a></li>
-  <li><a routerLink="/space-invaders">Space Invaders</a></li>
+<header>
+  <h1>🎮 LetsPlay Arcade 🎮</h1>
+</header>
 
+<section class="hero">
+  <h2>Erlebe die besten Retro-Arcade-Spiele!</h2>
+  <p>Wähle ein Spiel und lass die Action beginnen!</p>
+</section>
 
+<main>
+  <div class="game-list">
+    <a routerLink="/tictactoe" class="game-link">
+      <span>⭕ Tic Tac Toe ❌</span>
+    </a>
+    <a routerLink="/memory" class="game-link">
+      <span>🧠 Memory</span>
+    </a>
+    <a routerLink="/doodlejump" class="game-link">
+      <span>🕹️ Doodle Jump</span>
+    </a>
+    <a routerLink="/rockpaperscissors" class="game-link">
+      <span>✊✋✌️ Rock-Paper-Scissors</span>
+    </a>
+    <a routerLink="/minesweeper" class="game-link">
+      <span>💣 Minesweeper</span>
+    </a>
+    <a routerLink="/checkers" class="game-link">
+      <span>♟️ Checkers Game</span>
+    </a>
+    <a routerLink="/space-invaders" class="game-link">
+      <span>👾 Space Invaders</span>
+    </a>
+    <a routerLink="/racing-game" class="game-link">
+      <span>🏎️ Racing Game</span>
+    </a>
+  </div>
 
-</ul>
-<router-outlet></router-outlet>
+  <!-- Router Outlet eingefügt -->
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>© 2025 LetsPlay Arcade. Alle Rechte vorbehalten.</p>
+</footer>
+
+<div class="mobile-message">
+  <p>Sorry, unsere Spiele sind nicht für kleinere Bildschirme verfügbar! 😔</p>
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExanBnMGw1YTVydnVncWRhMTZ4dTJqMWZxbXhnbngwa2dxZ2FsZjIyeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/6oFNB3JPuLpAs/giphy.webp" alt="PC required GIF" />
+</div>
